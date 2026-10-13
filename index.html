@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LWIDU JESSY MALAALA | Computer Science Student, Uganda</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ee; --ink:#14231b; --muted:#56635b; --line:#d9d6cb; --card:#fffdf8; --accent:#0e6b4a; --accent2:#f2b632;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#109a4e;--ink:#eef1ea;--muted:#9aa89f;--line:#2a3a31;--card:#16241c;--accent:#4fd1a0;--accent2:#f2b632}}
+:root[data-theme="dark"]{--bg:#41a56e;--ink:#eef1ea;--muted:#9aa89f;--line:#2a3a31;--card:#16241c;--accent:#4fd1a0;--accent2:#f2b632}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+nav{display:flex;gap:20px;justify-content:flex-end;padding:20px 0;font-size:15px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.hero{padding:56px 0 48px;border-bottom:1px solid var(--line)}
+h1{font:800 clamp(52px,13vw,112px)/.95 Fraunces,Georgia,serif;margin:0 0 24px;letter-spacing:-.02em}
+.hero p{max-width:34em;font-size:19px;color:var(--muted);margin:0 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;margin-right:10px}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+:root[data-theme="dark"] .btn,:root:not([data-theme="light"]) .btn{color:#0f1a14}
+section{padding:52px 0;border-bottom:1px solid var(--line)}
+h2{font:600 32px/1.2 Fraunces,Georgia,serif;margin:0 0 24px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px 20px}
+.skill h3{margin:0 0 6px;font-size:18px}
+.skill p{margin:0;color:var(--muted);font-size:15px}
+.skill.main{border-left:4px solid var(--accent2)}
+.proj{padding:20px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.proj h3{margin:0 0 4px;font:600 22px Fraunces,Georgia,serif}
+.proj p{margin:0 0 8px;color:var(--muted)}
+.proj a{color:var(--accent);font-weight:500}
+.tags{font-size:14px;color:var(--muted)}
+footer{padding:36px 0 56px;color:var(--muted);font-size:15px}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+
+  <header class="hero">
+    <h1>LWIDU JESSY MALAALA</h1>
+    <p>Computer science student in Uganda. I build practical software for real local problems, and I'm working toward being a person of value to Uganda's prosperity.</p>
+    <a class="btn" href="#projects">See my projects</a><a class="btn alt" href="#contact">Get in touch</a>
+  </header>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I'm studying computer science at Uganda Christian University in Mukono. I came to it after attending my A-level at Bethany High School Naalya and my O-level at St.Kizito Secondary School Bugolobi, so I like problem solving, systems and security. I'm focused on practical, market-ready skills and on building things Ugandans can actually use and also global market at large.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill main"><h3>C programming</h3><p>Core programming, memory, pointers and problem solving in C.</p></div>
+      <div class="skill main"><h3>Data enumeration</h3><p>Cleaning, exploring and making sense of data to support decisions.</p></div>
+      <div class="skill"><h3>HTML and CSS</h3><p>Semantic, responsive pages that work on a phone first.</p></div>
+      <div class="skill"><h3>Computer assembly and reassembly</h3><p>am able fix minor computer issues</p></div>
+      <div class="skill"><h3>softwater installation</h3><p>all kinds of softwares and virtual machines</p></div>
+      <div class="skill"><h3>Problem solving</h3><p>Turning a real need into a clear, working solution.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="proj">
+      <h3>RecordEase Uganda</h3>
+      <p>A record-keeping application for Ugandan farmers, clinics, SACCOs and schools, replacing paper books with simple digital records.</p>
+      <p>This project will help clients to manage record keeping and profit/loss calculation.</p>
+      <div class="tags">Status: in development</div>
+      <a href="#contact">Link coming soon</a>
+    </div>
+    <div class="proj">
+      <h3>Findback</h3>
+      <p>A class project aiming retrieve their lost items.</p>
+      <p>A lost-and-found website for students. People can report items they lost or found so owners can get them back.</p>
+      <div class="tags">HTML, CSS, JavaScript, Bootstrap</div>
+      <a href="#contact">Link coming soon</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Open to internships, collaborations and conversations about building for Uganda.</p>
+    <p><a href="mailto:lwidujessymalaala@gmail.com">lwidujessymalaala@gmail</a><br>
+    <a href="https://github.com/lwidu">github.com/lwidu</a><br>
+    <a href="0781990492/0752162657">0781990492/0752162657</a><br>
+  </section>
+
+  <footer>Kampala, Uganda. Built by Jessy.</footer>
+</div>
+</body>
+</html>
